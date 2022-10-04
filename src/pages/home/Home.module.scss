@@ -1,0 +1,51 @@
+.hero {
+  background-color: var(--bg-color);
+  width: 100%;
+}
+
+.movingBanner {
+  position: absolute;
+  height: 100vh;
+  top: calc(100vh * 0.8);
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  // transform: translateZ(5px) scale(0.5);
+  transform-origin: top;
+  transform: translateZ(2px) scale(0.8);
+  z-index: 9;
+}
+
+.aboutUs {
+  position: absolute;
+  height: 100vh;
+  transform-origin: top;
+  top: calc(150vh * 0.7);
+  right: 0;
+  left: 0;
+  transform: translateZ(3px) scale(0.7);
+  z-index: 10;
+}
+
+.parallax {
+  img {
+    margin-top: 80vh;
+    z-index: -2;
+    top: 500px;
+    left: 0;
+    transform: translateZ(0);
+    width: 100vw;
+  }
+}
+
+.featuredProjects {
+  position: absolute;
+  height: 100vh;
+  background-color: rgb(190, 190, 190);
+  transform-origin: top;
+  top: calc((150vh + 140vh + 100vh) * 0.7);
+  right: 0;
+  left: 0;
+  transform: translateZ(3px) scale(0.7);
+  z-index: 10;
+}

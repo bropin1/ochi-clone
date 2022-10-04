@@ -1,0 +1,127 @@
+:root {
+  font-size: 62.5%;
+  --black: #212121;
+  --dark-green: #004d43;
+  --light-green: #cdea68;
+  --orange: #cb6533;
+  --yellow: #f7e835;
+  --bg-color: #f1f1f1;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Neue Montreal", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  button {
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-weight: 500;
+  }
+}
+
+html {
+  &::-webkit-scrollbar {
+    //chrome
+    display: none;
+  }
+
+  -ms-overflow-style: none; // IE Edge
+  scrollbar-width: none; //firefox
+}
+
+//foundersGrotesk
+@font-face {
+  font-family: "FoundersGrotesk";
+  src: url("./ressources/fonts/CustomFoundersGrotesk-Semibold.woff")
+    format("woff");
+}
+
+//NeueMontreal
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("./ressources/fonts/NeueMontreal/PPNeueMontreal-Book.woff")
+    format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("./ressources/fonts/NeueMontreal/PPNeueMontreal-Bold.woff")
+    format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("./ressources/fonts/NeueMontreal/PPNeueMontreal-Medium.woff")
+    format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("./ressources/fonts/NeueMontreal/PPNeueMontreal-Thin.woff")
+    format("woff");
+  font-weight: 200;
+}
+
+@media (min-width: 375px) {
+  :root {
+    --ExtraLarge: 41rem;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --ExtraLarge: 41rem;
+    --large: 12rem;
+  }
+  h1 {
+    font-size: 9rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --large: 18rem;
+  }
+  h1 {
+    font-size: 10rem;
+  }
+
+  h2 {
+    font-size: 5.2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --large: 22rem;
+  }
+  h1 {
+    font-size: 13rem;
+  }
+  h2 {
+    font-size: 5.2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    font-size: calc(10 / 1440 * 100vw);
+    --ExtraLarge: 41rem;
+  }
+  h1 {
+    font-size: 13rem;
+  }
+  h2 {
+    font-size: 5.2rem;
+  }
+}

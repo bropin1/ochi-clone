@@ -1,0 +1,59 @@
+.wrapper {
+  background-color: var(--dark-green);
+  // background-color: rgba(0, 128, 0, 0.199);
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  height: 50vh;
+  overflow: hidden;
+  padding-top: 10rem;
+  // transform-style: preserve-3d;
+
+  .container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: rgba(white, 0.4);
+    }
+    &::before {
+      top: 0;
+    }
+    top: 0;
+    &::after {
+      bottom: 0;
+    }
+
+    .text {
+      display: inline-block;
+      font-family: "FoundersGrotesk";
+      text-transform: uppercase;
+      line-height: 0.55;
+      white-space: nowrap;
+      font-size: var(--ExtraLarge);
+      color: white;
+      position: relative;
+
+      animation-name: infiniteTranslation;
+      animation-duration: 15s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+}
+
+@keyframes infiniteTranslation {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}

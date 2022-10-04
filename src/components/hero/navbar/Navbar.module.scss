@@ -1,0 +1,34 @@
+header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.8rem;
+  box-sizing: border-box;
+  // padding-left: 5rem;
+  // padding-right: 5rem;
+  .logo {
+    svg {
+      width: 4.5rem;
+    }
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 45vw;
+    a {
+      margin-right: 2rem;
+      text-transform: none;
+      text-decoration: none;
+      font-weight: 300;
+      white-space: nowrap;
+      &:visited {
+        color: inherit;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
